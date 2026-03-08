@@ -1,6 +1,0 @@
-@WorkshopBookingSystem_HostAddress = http://localhost:5100
-
-GET {{WorkshopBookingSystem_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

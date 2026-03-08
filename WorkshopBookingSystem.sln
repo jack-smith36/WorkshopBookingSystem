@@ -1,6 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem", "WorkshopBookingSystem\WorkshopBookingSystem.csproj", "{393F4490-300A-49A7-BBE0-D90F6115388B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem.API", "WorkshopBookingSystem.API\WorkshopBookingSystem.API.csproj", "{393F4490-300A-49A7-BBE0-D90F6115388B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem.Application", "WorkshopBookingSystem.Application\WorkshopBookingSystem.Application.csproj", "{2510CCC6-BC94-4359-9078-9653857EC516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem.Domain", "WorkshopBookingSystem.Domain\WorkshopBookingSystem.Domain.csproj", "{79EE0240-E853-4677-A779-4D26B78B9FC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem.Infrastructure", "WorkshopBookingSystem.Infrastructure\WorkshopBookingSystem.Infrastructure.csproj", "{D483392D-845E-4583-B029-2DBDE694957D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkshopBookingSystem.UnitTests", "WorkshopBookingSystem.UnitTests\WorkshopBookingSystem.UnitTests.csproj", "{22B3AB0E-48DE-48FE-9BB4-C877338C2A65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C183DE8-3F48-454E-859B-5D359392EAB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{39188D7D-A10D-4121-B5D3-30B896B7C7F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +24,28 @@ Global
 		{393F4490-300A-49A7-BBE0-D90F6115388B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393F4490-300A-49A7-BBE0-D90F6115388B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{393F4490-300A-49A7-BBE0-D90F6115388B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2510CCC6-BC94-4359-9078-9653857EC516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2510CCC6-BC94-4359-9078-9653857EC516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2510CCC6-BC94-4359-9078-9653857EC516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2510CCC6-BC94-4359-9078-9653857EC516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79EE0240-E853-4677-A779-4D26B78B9FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79EE0240-E853-4677-A779-4D26B78B9FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79EE0240-E853-4677-A779-4D26B78B9FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79EE0240-E853-4677-A779-4D26B78B9FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D483392D-845E-4583-B029-2DBDE694957D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D483392D-845E-4583-B029-2DBDE694957D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D483392D-845E-4583-B029-2DBDE694957D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D483392D-845E-4583-B029-2DBDE694957D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B3AB0E-48DE-48FE-9BB4-C877338C2A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B3AB0E-48DE-48FE-9BB4-C877338C2A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B3AB0E-48DE-48FE-9BB4-C877338C2A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B3AB0E-48DE-48FE-9BB4-C877338C2A65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D483392D-845E-4583-B029-2DBDE694957D} = {5C183DE8-3F48-454E-859B-5D359392EAB4}
+		{393F4490-300A-49A7-BBE0-D90F6115388B} = {5C183DE8-3F48-454E-859B-5D359392EAB4}
+		{79EE0240-E853-4677-A779-4D26B78B9FC6} = {5C183DE8-3F48-454E-859B-5D359392EAB4}
+		{2510CCC6-BC94-4359-9078-9653857EC516} = {5C183DE8-3F48-454E-859B-5D359392EAB4}
+		{22B3AB0E-48DE-48FE-9BB4-C877338C2A65} = {39188D7D-A10D-4121-B5D3-30B896B7C7F2}
 	EndGlobalSection
 EndGlobal
