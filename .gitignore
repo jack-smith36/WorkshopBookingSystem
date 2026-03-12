@@ -4,3 +4,4 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 .idea/
+/WorkshopBookingSystem.API/appsettings.Development.json
