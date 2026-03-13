@@ -1,0 +1,35 @@
+﻿services:
+  db:
+    image: postgres:16
+    container_name: workshop_booking_db
+    environment:
+      POSTGRES_DB: workshopbooking
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yourpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d workshopbooking"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: WorkshopBookingSystem.API/Dockerfile
+    container_name: workshop_booking_api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Host=db;Port=5432;Database=workshopbooking;Username=postgres;Password=yourpassword
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:
