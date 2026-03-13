@@ -2,8 +2,9 @@
 
 namespace WorkshopBookingSystem.Controllers.V1;
 
+[ApiController]
 [Route("auth")]
-public class AuthController : ApiControllerBase
+public class AuthController : ControllerBase
 {
     [HttpGet]
     public async Task<IActionResult> Index()
